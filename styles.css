@@ -1,0 +1,32 @@
+/* BODY → Flex container, column layout */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* full screen height */
+    margin: 0;
+}
+
+/* MAIN → Flex container, row layout */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* makes main take remaining space */
+}
+
+/* ARTICLE takes 2/3 of the width */
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+/* ASIDE takes 1/3 of the width */
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
